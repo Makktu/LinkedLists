@@ -175,83 +175,37 @@ theList.append(33);
 theList.append(11);
 theList.prepend(7777);
 theList.append("TESTY");
-// console.log(theList.contains("TESTY"));
+console.log(theList.contains("TESTY"));
 
-// console.log("THE LIST ENTIRE: ", theList);
-// console.log("SIZE: ", theList.size);
-// console.log("HEAD: ", theList.head);
-// console.log("TAIL: ", theList.tail());
-// console.log("AT position 1: ", theList.at(1));
-// console.log("AT position 2: ", theList.at(2));
-// console.log("AT position 3: ", theList.at(3));
-// console.log("AT position 4: ", theList.at(4));
-// console.log("AT position 5: ", theList.at(5));
-// theList.pop();
-// console.log("NEW TAIL AFTER POP: ", theList.tail());
-// console.log(theList.contains(456));
-// console.log(theList.contains(11));
-// console.log(theList.contains("TESTY"));
-// console.log(theList.find("TESTY"));
-// console.log(theList.toString());
-// console.log("++++++++++INSERT ATs TO FOLLOW+++++++++++++++++++");
-// theList.insertAt(55, 1);
-// console.log(theList);
-// console.log(theList.toString());
-// theList.insertAt("TROUBLE", 3);
-// console.log(theList);
-// console.log(theList.toString());
-// theList.removeAt(5);
-// console.log(theList.toString());
-// console.log("NEW TAIL AFTER POP: ", theList.tail());
-// theList.removeAt(1);
-// console.log(theList.toString());
-// console.log(theList);
-// theList.removeAt(2);
-// console.log(theList.toString());
-// console.log(theList);
-
-// **************************** THE BINARY SEARCH SECTION (EXERCISES)
-
-console.log("⟫ BINARY STUFF");
-
-class BSTNode {
-    constructor(data, leftNode = null, rightNode = null) {
-        this.data = data;
-        this.leftNode = leftNode;
-        this.rightNode = rightNode;
-    }
-}
-
-class BinarySearchTree {
-    constructor() {
-        this.root = null;
-    }
-
-    buildTree(arr, rootIndex) {
-        let newBinaryNode = new BSTNode(arr[rootIndex]);
-        // sort the array
-        // remove duplicates (skip for now)
-        // return the root for the tree itself
-        let current = arr[rootIndex];
-        while (current) {
-            if (current.rightNode == null) {
-                if (arr[rootIndex + 1]) {
-                }
-            }
-        }
-    }
-
-    sortTheArray(arr) {
-        let sortedArr = arr.sort(function (a, b) {
-            return a - b;
-        });
-
-        this.buildTree(sortedArr, Math.round(sortedArr.length / 2));
-    }
-}
-
-const arr = [2, 3, 4, 1];
-
-let newTree = new BinarySearchTree();
-
-newTree.sortTheArray(arr);
+console.log("THE LIST ENTIRE: ", theList);
+console.log("SIZE: ", theList.size);
+console.log("HEAD: ", theList.head);
+console.log("TAIL: ", theList.tail());
+console.log("AT position 1: ", theList.at(1));
+console.log("AT position 2: ", theList.at(2));
+console.log("AT position 3: ", theList.at(3));
+console.log("AT position 4: ", theList.at(4));
+console.log("AT position 5: ", theList.at(5));
+theList.pop();
+console.log("NEW TAIL AFTER POP: ", theList.tail());
+console.log(theList.contains(456));
+console.log(theList.contains(11));
+console.log(theList.contains("TESTY"));
+console.log(theList.find("TESTY"));
+console.log(theList.toString());
+console.log("++++++++++INSERT ATs TO FOLLOW+++++++++++++++++++");
+theList.insertAt(55, 1);
+console.log(theList);
+console.log(theList.toString());
+theList.insertAt("TROUBLE", 3);
+console.log(theList);
+console.log(theList.toString());
+theList.removeAt(5);
+console.log(theList.toString());
+console.log("NEW TAIL AFTER POP: ", theList.tail());
+theList.removeAt(1);
+console.log(theList.toString());
+console.log(theList);
+theList.removeAt(2);
+console.log(theList.toString());
+console.log(theList);
